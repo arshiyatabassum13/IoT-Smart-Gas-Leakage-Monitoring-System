@@ -5,10 +5,7 @@
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
-> An embedded IoT safety system that continuously monitors combustible 
-> gas concentration with user-configurable thresholds, real-time web 
-> monitoring, audible alerts, and automatic relay-triggered solenoid 
-> valve shutdown.
+> An embedded IoT safety system that continuously monitors combustible gas concentration with user-configurable thresholds, real-time web monitoring, audible alerts, and automatic relay-triggered solenoid valve shutdown.
 
 ---
 
@@ -22,6 +19,12 @@
 - 🔔 Buzzer alert on abnormal gas levels
 - 🔌 Automatic solenoid valve shutdown via relay on critical levels
 - 3-level safety logic: **Safe → Warning → Critical**
+
+---
+
+## 🖼️ Hardware Prototype
+
+![Prototype](images/prototype.jpg)
 
 ---
 
@@ -40,20 +43,6 @@
 
 ---
 
-## ⚙️ System Architecture
-
-```
-[MQ-2 Sensor] ──┐
-                 ├──► [ESP32] ──► [LCD Display]
-[DHT11 Sensor] ──┘       │
-                          ├──► [Web Interface (Wi-Fi)]
-[Keypad] ────────────────►│
-                          ├──► [Buzzer]
-                          └──► [Relay] ──► [Solenoid Valve]
-```
-
----
-
 ## 🔁 3-Level Safety Logic
 
 | Level | Condition | Action |
@@ -64,56 +53,26 @@
 
 ---
 
-## 📂 Project Structure
-
-```
-IoT-Smart-Gas-Leakage-Monitoring-System/
-├── src/
-│   └── gas_monitor.ino       # Main Arduino sketch
-├── docs/
-│   ├── circuit_diagram.png   # Wiring diagram
-│   └── research_paper.pdf    # Published paper
-├── images/
-│   ├── prototype.jpg         # Hardware prototype
-│   └── web_interface.png     # Web dashboard screenshot
-├── README.md
-└── LICENSE
-```
-
----
-
 ## 🚀 How to Run
 
 1. Clone this repo
 ```bash
 git clone https://github.com/arshiyatabassum13/IoT-Smart-Gas-Leakage-Monitoring-System.git
 ```
-2. Open `src/gas_monitor.ino` in Arduino IDE
+2. Open `gas_monitor.ino` in Arduino IDE
 3. Install libraries: `DHT`, `LiquidCrystal_I2C`, `Keypad`
 4. Set your Wi-Fi credentials in the code
 5. Flash to ESP32 and monitor via Serial or browser
 
 ---
 
-## 📄 Research Paper
-
-This project is documented as a research paper:
-
-**"An IoT-Enabled Smart Gas Leakage Monitoring System with 
-Threshold-Based Automatic Safety Shutdown"**  
-*Vardhaman College of Engineering, Hyderabad*
-
-📎 [View Paper](docs/research_paper.pdf)
-
----
-
 ## 👩‍💻 Author
 
-**Arshiya Tabassum**  
-B.Tech EEE | Vardhaman College of Engineering  
-Secretary, IEEE IES Chapter  
-📧 arshiyahaseena18@gmail.com  
-🔗 [LinkedIn](https://linkedin.com/in/YOUR_LINKEDIN)
+**Arshiya Tabassum**
+B.Tech EEE | Vardhaman College of Engineering, Hyderabad
+Secretary, IEEE IES Chapter
+📧 arshiyahaseena18@gmail.com
+🔗 [LinkedIn](https://www.linkedin.com/in/arshiya-tabassum-043831269/)
 
 ---
 
