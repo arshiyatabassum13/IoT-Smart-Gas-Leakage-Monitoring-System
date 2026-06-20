@@ -18,13 +18,12 @@
 - 🌐 Local web interface over Wi-Fi (no cloud needed)
 - 🔔 Buzzer alert on abnormal gas levels
 - 🔌 Automatic solenoid valve shutdown via relay on critical levels
-- 3-level safety logic: **Safe → Warning → Critical**
 
 ---
 
 ## 🖼️ Hardware Prototype
 
-![Prototype](images/prototype.jpg)
+![Prototype](MINI%20PROJECT.jpeg)
 
 ---
 
@@ -50,19 +49,6 @@
 | ✅ Safe | Gas < 40% of threshold | Monitor only |
 | ⚠️ Warning | Gas approaching threshold | Buzzer ON |
 | 🚨 Critical | Gas > threshold | Buzzer ON + Valve CLOSED |
-
----
-
-## 🚀 How to Run
-
-1. Clone this repo
-```bash
-git clone https://github.com/arshiyatabassum13/IoT-Smart-Gas-Leakage-Monitoring-System.git
-```
-2. Open `gas_monitor.ino` in Arduino IDE
-3. Install libraries: `DHT`, `LiquidCrystal_I2C`, `Keypad`
-4. Set your Wi-Fi credentials in the code
-5. Flash to ESP32 and monitor via Serial or browser
 
 ---
 
